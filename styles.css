@@ -1,20 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-#todo-app {
-    width: 100%;
-    max-width: 400px;
-    background: #fff;
+.container {
+    background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 h1 {
@@ -22,26 +21,25 @@ h1 {
     margin-bottom: 20px;
 }
 
-#task-input {
-    width: 100%;
+input[type="text"] {
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
-#add-task-btn {
-    width: 100%;
+button {
+    width: 18%;
     padding: 10px;
-    background-color: #007bff;
+    margin-left: 2%;
+    background-color: #28a745;
     color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
-#add-task-btn:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: #218838;
 }
 
 ul {
@@ -50,24 +48,23 @@ ul {
 }
 
 li {
-    background-color: #eeeeee;
-    margin-top: 8px;
-    padding: 10px;
-    border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
 }
 
-.remove-btn {
-    cursor: pointer;
-    background-color: #ff6347;
+button.remove-btn {
+    background-color: #dc3545;
     color: white;
     border: none;
-    border-radius: 4px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
-.remove-btn:hover {
-    background-color: #d9534f;
+button.remove-btn:hover {
+    background-color: #c82333;
 }
